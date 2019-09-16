@@ -18,7 +18,7 @@ if(isset($_POST['register'])){
     $file = file_get_contents("auth.json");
     $records = json_decode($file,true);
 
-    $username = $_POST['username'];
+    $username = strtolower($_POST['username']);
 
     $password = sha1($_POST['password']);
 
