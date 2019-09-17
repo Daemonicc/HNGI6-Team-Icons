@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#login-section {
+    text-align: center;
+}
+
+.welcome {
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+.welcome h1 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #3AB397;
+}
+
+/*.form-group i {
+    position: absolute;
+}*/
+.input-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.input-group input {
+    background: #F4F8F7;
+    border-radius: 4px; 
+    height: 60px;
+    border: none;
+}
+.input-group-addon {
+    background: #F4F8F7;
+    border-radius: 4px; 
+    height: 60px;
+    border: none;
+}
+.icon {
+    padding: 20px;
+    color: #3AB397;
+    left: 7px;
+}
+
+
+
+#left-word {
+    text-align: right;
+}
+
+#alternateword h6 {
+    font-size: 12px;
+    padding: 5px;
+}
+
+#socials {
+    margin: 7px;
+    padding: 5px;
+}
+
+#socials i {
+    margin: 15px;
+    padding: 5px;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.fa-facebook-f i {
+    padding: 7px;
+}
+
+.button-group  {
+    margin-top: 20px;
+    padding: 2px;
+    
+}
+
+.button-group button {
+    color: #ffffff;
+    background-color: #3AB397;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 2px solid #3AB397;
+    border-radius: 36px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    
+}
+
