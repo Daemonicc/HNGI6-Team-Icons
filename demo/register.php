@@ -63,82 +63,85 @@ if(isset($_POST['register'])){
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Team Icon</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aroma Shop - Login</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+  <link rel="stylesheet" href="style2.css">
 </head>
-<body>
- <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Team Icon</a>
-        </div>
-
-        </div><!-- /.navbar-collapse -->
-    </nav>
-
-
-<section id="login">
+ <section class="login_box_area section-margin">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="panel panel-success">
-                    <div class="panel-heading">Register</div>
-                    <div class="panel-body">
-                        <form action="" method="post">
+            <div class="col-lg-4 d-none d-md-block">
+                <div class="login_box_img">
+                    <div class="hover">
+                        <h4>WELCOME BACK!</h4>
+                        <p>Keep connected with us.<br> Please login with your personal details </p>
+                        <a class="button button-account" href="login.php">login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="login_form_inner">
+                    <h3>Signup for team icon</h3>
+                        <form class="row login_form" action="" method="post">
                             <?php
                                 if(isset($_SESSION['err_msg'])) {
                                     echo $_SESSION['err_msg'];
                                     unset($_SESSION['err_msg']);
                                 }
                             ?>
-                            <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" id="username" name="username" class="form-control" required placeholder="Team Icon">
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fas fa-user icon"></i>
+                            </div> 
+                            <input type="text" name="username" required class="form-control" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="far fa-envelope icon"></i> 
+                            </div> 
+                            <input type="text" name="email" required class="form-control" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fas fa-lock icon"></i>
                             </div>
-
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" name="email" required id="email" placeholder="Email Address" class="form-control">
+                            <input type="password" name="password" required class="form-control" placeholder=" Password"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                        </div>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="fas fa-lock icon"></i>
                             </div>
-
-                            <div class="form-group">
-                                <label for="password">Password</label>
-                                <input type="password" name="password" required class="form-control" id="password" placeholder="Password">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="password2">Confirm Password</label>
-                                <input type="password" name="password2" required class="form-control" id="password2" placeholder="Confirm Password">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="submit" name="register" class="btn btn-success" value="Sign Up">
-                            </div>
-
-                            <p>
-                                Already a user? <a href="login.php">Login</a>
-                            </p>
-                        </form>
-                    </div>
+                            <input type="password" name="password2" required class="form-control" placeholder=" Confirm password"onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'">
+                        </div>
+                        <div id="alternateword">
+                            <h6 id="left-word" class="float-right">Forgot Password?</h6>
+                            <h6 id="center-word"> Existing user? <a href="login.php">Login</a></h6>
+                        </div>
+                        <div  id="socials">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="button-group text-center">
+                            <button type="submit" name="register" class="btn btn-default submit-btn">
+                                Login
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
+
+
 </body>
+<script src="https://kit.fontawesome.com/66a27d438b.js"></script>
 </html>
