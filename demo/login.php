@@ -32,7 +32,7 @@ if(isset($_POST['register'])){
         exit();
     }else{
         $_SESSION['err_msg'] = "<div class='alert alert-danger'>Invalid login details</div>";
-        //header("location:login.php");
+        header("location:login.php");
 
     }
 }
