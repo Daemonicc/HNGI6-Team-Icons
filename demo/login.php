@@ -44,12 +44,11 @@ if(isset($_POST['register'])){
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Aroma Shop - Login</title>
-	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <title>Team Icons</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
   <link rel="stylesheet" href="style2.css">
 </head>
- <!--================Login Box Area =================-->
+
  <section class="login_box_area section-margin">
     <div class="container">
         <div class="row">
@@ -98,14 +97,14 @@ if(isset($_POST['register'])){
                     <div class="hover">
                         <h4>HELLO FRIEND!</h4>
                         <p>Enter personal details and start<br> a journey with us</p>
-                        <a class="button button-account" href="register.php">Signup</a>
+                        <a class="button button-account btn btn-info" href="register.php">Signup</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--================End Login Box Area =================-->
+
 
 </body>
 <script src="https://kit.fontawesome.com/66a27d438b.js"></script>
