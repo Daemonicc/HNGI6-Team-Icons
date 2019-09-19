@@ -28,7 +28,7 @@ if(isset($_POST['register'])){
     if(in_array("$username", array_column($records, 'username')) && in_array("$password", array_column($records, 'password'))) {
         $_SESSION['test-user'] = $username;
         $_SESSION['err_msg'] = "<div class='alert alert-success'>Welcome, Login successfully!</div>";
-        header("location:home.php");
+        header("location:index.php");
         exit();
     }else{
         $_SESSION['err_msg'] = "<div class='alert alert-danger'>Invalid login details</div>";
@@ -48,7 +48,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
   <link rel="stylesheet" href="style.css">
 </head>
-
+<body>
  <section class="login_box_area section-margin">
     <div class="container">
         <div class="row">
