@@ -70,7 +70,7 @@ if(isset($_POST['register'])){
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Team Icon</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
  <section class="login_box_area section-margin">
@@ -130,7 +130,7 @@ if(isset($_POST['register'])){
                         </div>
                         <div class="button-group text-center">
                             <button type="submit" name="register" class="btn btn-default submit-btn">
-                                Login
+                                Register
                             </button>
                         </div>
                     </form>
