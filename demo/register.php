@@ -140,7 +140,7 @@ if(isset($_POST['register'])){
         </div>
     </div>
 </section>
-
+<!--================End Login Box Area =================-->
 
 </body>
 <script src="https://kit.fontawesome.com/66a27d438b.js"></script>
